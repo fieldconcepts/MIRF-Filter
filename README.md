@@ -1,6 +1,6 @@
 # MIRF-Filter
 
-Script that check for a existence of a new seismic file on a NAS drive. If new file exists the upsampled using a SciPy interpolation from 375us interval to 250us interval.
+Script that periodically checks for a new seismic file on a NAS drive. If new file exists then it is read into memory and upsampled using a SciPy interpolation "signal.resample" from 375us interval to 250us interval.
 
 Common mode noise filter is applied to remove surface vibration from channels on fibre.
 
